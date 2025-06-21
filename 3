@@ -1,0 +1,17 @@
+{
+    funcao inicio()
+    {
+        // Tempo total de estudo por dia: 1 hora e 40 minutos = 100 minutos
+        inteiro tempo_total = 60 + 40
+        inteiro disciplinas = 6
+
+        // Cálculo
+        inteiro tempo_por_disciplina = tempo_total / disciplinas
+        inteiro tempo_livre = tempo_total % disciplinas
+
+        escreva("Tempo total disponível: ", tempo_total, " minutos\n")
+        escreva("Número de disciplinas: ", disciplinas, "\n")
+        escreva("Tempo para cada disciplina: ", tempo_por_disciplina, " minutos\n")
+        escreva("Tempo livre restante: ", tempo_livre, " minutos\n")
+    }
+}
