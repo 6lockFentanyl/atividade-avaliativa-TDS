@@ -1,0 +1,10 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro horas_por_dia = 24
+		inteiro dias_por_ano = 365
+		inteiro horas_ano = horas_por_dia * dias_por_ano
+		escreva("a) Horas em um ano: ", horas_ano, "\n")
+  }
+}
