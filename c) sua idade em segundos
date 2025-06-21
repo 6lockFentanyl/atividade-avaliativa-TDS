@@ -2,7 +2,7 @@ programa {
   funcao inicio() {
     
 		inteiro idade_anos
-		escreva("c) Diga sua idade em anos: ")
+		escreva("Diga sua idade em anos: ")
 		leia(idade_anos)
 
 		inteiro seg_ano = 365 * 24 * 60 * 60
