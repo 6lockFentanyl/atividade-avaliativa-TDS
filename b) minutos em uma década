@@ -1,0 +1,9 @@
+programa {
+  funcao inicio() {
+
+		inteiro min_por_dia = 24 * 60
+		inteiro min_decada = min_por_dia * 365 * 10
+		escreva("b) Minutos em uma década: ", min_decada, "\n")
+
+  }
+}
