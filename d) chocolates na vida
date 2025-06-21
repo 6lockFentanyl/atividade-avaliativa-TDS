@@ -1,0 +1,8 @@
+programa {
+  funcao inicio() {
+
+		inteiro chocolates_por_semana
+		escreva("d) Quantos chocolates você pretende comer na vida? ")
+		leia(chocolates_por_semana)
+  }
+}
