@@ -1,0 +1,85 @@
+programa
+{
+    funcao inicio()
+    {
+        real segundos_por_ano = 31557600
+
+        // a. Quantos dias terrestres cada planeta leva para dar uma volta no Sol?
+        escreva("a) Dias terrestres por volta orbital:\n")
+        escreva(" - Mercúrio: ", 0.2408467 * 365.25, " dias\n")
+        escreva(" - Vênus: ", 0.61519726 * 365.25, " dias\n")
+        escreva(" - Marte: ", 1.8808158 * 365.25, " dias\n")
+        escreva(" - Júpiter: ", 11.862615 * 365.25, " dias\n")
+        escreva(" - Urano: ", 84.016846 * 365.25, " dias\n")
+        escreva(" - Netuno: ", 164.79132 * 365.25, " dias\n\n")
+
+        // b. Se minha idade é de 977 milhões de segundos terrestres, qual é minha idade em Mercúrio?
+        real idade_segundos = 977000000
+        real idade_terrestre = idade_segundos / segundos_por_ano
+        real idade_em_mercurio = idade_terrestre / 0.2408467
+        escreva("b) Sua idade em Mercúrio é: ", idade_em_mercurio, " anos mercurianos\n\n")
+
+        // c. Leia idade e planeta -> converte idade
+        real idade
+        cadeia planeta
+        escreva("c) Digite sua idade terrestre (anos): ")
+        leia(idade)
+        escreva("   Digite o planeta (Mercurio, Venus, Marte, Jupiter, Urano, Netuno): ")
+        leia(planeta)
+
+        real fator = 1 // padrão para Terra
+
+        se (planeta == "Mercurio") {
+            fator = 0.2408467
+        } senao se (planeta == "Venus") {
+            fator = 0.61519726
+        } senao se (planeta == "Marte") {
+            fator = 1.8808158
+        } senao se (planeta == "Jupiter") {
+            fator = 11.862615
+        } senao se (planeta == "Urano") {
+            fator = 84.016846
+        } senao se (planeta == "Netuno") {
+            fator = 164.79132
+        }
+
+        real idade_planeta = idade / fator
+        escreva("   Sua idade em ", planeta, " é: ", idade_planeta, " anos\n\n")
+
+        // d. Informar em qual planeta a pessoa seria mais jovem (idade / período orbital maior)
+        real menor_idade = idade / 0.2408467
+        cadeia planeta_mais_jovem = "Mercurio"
+
+        se (idade / 0.61519726 < menor_idade) {
+            menor_idade = idade / 0.61519726
+            planeta_mais_jovem = "Venus"
+        }
+
+        se (idade / 1.8808158 < menor_idade) {
+            menor_idade = idade / 1.8808158
+            planeta_mais_jovem = "Marte"
+        }
+
+        se (idade / 11.862615 < menor_idade) {
+            menor_idade = idade / 11.862615
+            planeta_mais_jovem = "Jupiter"
+        }
+
+        se (idade / 84.016846 < menor_idade) {
+            menor_idade = idade / 84.016846
+            planeta_mais_jovem = "Urano"
+        }
+
+        se (idade / 164.79132 < menor_idade) {
+            menor_idade = idade / 164.79132
+            planeta_mais_jovem = "Netuno"
+        }
+
+        escreva("d) Você seria mais jovem em: ", planeta_mais_jovem, " (", menor_idade, " anos)\n")
+    }
+}
+        }
+
+        escreva("d) Você seria mais jovem em: ", planeta_mais_jovem, " (", menor_idade, " anos)\n")
+    }
+}
