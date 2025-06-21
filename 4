@@ -1,0 +1,35 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro tamanho_pedaco = 45 // em cm
+
+        // Tamanhos das tábuas em centímetros
+        inteiro tabua_3m = 300
+        inteiro tabua_4m = 400
+        inteiro tabua_5m = 500
+
+        // Cálculos com divisão inteira e resto (%)
+        inteiro qtd_3m = tabua_3m / tamanho_pedaco
+        inteiro sobra_3m = tabua_3m % tamanho_pedaco
+
+        inteiro qtd_4m = tabua_4m / tamanho_pedaco
+        inteiro sobra_4m = tabua_4m % tamanho_pedaco
+
+        inteiro qtd_5m = tabua_5m / tamanho_pedaco
+        inteiro sobra_5m = tabua_5m % tamanho_pedaco
+
+        // Exibição dos resultados
+        escreva("Tábua de 3 metros:\n")
+        escreva("  Pedaços de 45 cm: ", qtd_3m, "\n")
+        escreva("  Sobra de madeira: ", sobra_3m, " cm\n\n")
+
+        escreva("Tábua de 4 metros:\n")
+        escreva("  Pedaços de 45 cm: ", qtd_4m, "\n")
+        escreva("  Sobra de madeira: ", sobra_4m, " cm\n\n")
+
+        escreva("Tábua de 5 metros:\n")
+        escreva("  Pedaços de 45 cm: ", qtd_5m, "\n")
+        escreva("  Sobra de madeira: ", sobra_5m, " cm\n")
+    }
+}
