@@ -1,0 +1,12 @@
+programa {
+  funcao inicio() {
+    
+real idade_em_segundos = 977000000
+inteiro segundos_por_ano = 365 * 24 * 60 * 60
+
+real idade_em_anos = idade_em_segundos / segundos_por_ano
+
+escreva("idade em anos: ", idade_em_anos, " anos\n")
+
+  }
+}
