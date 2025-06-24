@@ -1,0 +1,17 @@
+programa {
+  inclua biblioteca Matematica
+
+  funcao inicio() {
+
+real a, b
+
+escreva("diga um valor a e um valor b\n")
+leia(a,b)
+
+real hipotenusa = (a*a) + (b*b)
+
+escreva("a hipotenusa dos catetos é:", Matematica.raiz(hipotenusa, 2))
+
+
+  }
+}
