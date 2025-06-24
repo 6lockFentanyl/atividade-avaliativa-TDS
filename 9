@@ -1,0 +1,26 @@
+programa
+{
+	
+	funcao inicio()
+	{
+inteiro metros_quadrados
+
+
+	escreva("diga quantos metros quadrados deve ser pintado\n")
+	leia(metros_quadrados)
+	
+real tinta = metros_quadrados / 3
+
+inteiro latas = tinta / 18
+
+//caso os metros quadrados sejam menores que 1 ou seja, precisem de menos litros do que a lata tem, será adicionado uma lata, mesmo que sobre.
+se (latas < 1)
+latas = + 1
+
+real custo = latas * 480
+
+	escreva("Será necessário comprar ", latas, " lata(s) de tinta, com um custo de ", custo, " reais.")
+
+	
+	}
+}
