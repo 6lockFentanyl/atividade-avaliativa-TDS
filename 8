@@ -1,0 +1,15 @@
+programa
+{
+	
+	funcao inicio()
+	{
+real MB, mbps
+
+	escreva("diga o tamanho de um arquivo e a velocidade de um link de internet\n")
+	leia(MB, mbps)
+real Mb = MB * 8
+real segundos = Mb / mbps
+
+	escreva("Levaria aproximadamente ", segundos / 60, " minutos para fazer o download de um arquivo de ", MB, " MB em uma velocidade de ", mbps," mbps.")
+	}
+}
