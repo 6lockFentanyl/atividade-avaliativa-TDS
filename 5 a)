@@ -1,9 +1,12 @@
 programa {
+
+inclua biblioteca Matematica
+
   funcao inicio() {
+  	
 
 real hipotenusa = (6.3*6.3) + (11.5*11.5)
-real hipotenusa2 = (6.3*6.3) + (11.5*11.5) / hipotenusa 
 
-escreva("a quantidade mínima a ser comprada é: \n", hipotenusa2, " metros.")
+escreva("a quantidade mínima a ser comprada é: \n", Matematica.raiz(hipotenusa, 2), " metros.")
   }
 }
